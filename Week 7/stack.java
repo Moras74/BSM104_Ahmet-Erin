@@ -17,9 +17,7 @@ public class stack {
 	s.pop();
 	System.out.println("Stack = "+s);
 	System.out.println(s.size());
-	System.out.println(s.peek());
-		
-		
+	System.out.println(s.peek());	
 	}		
 	}
 
