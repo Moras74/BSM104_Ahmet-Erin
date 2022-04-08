@@ -33,4 +33,5 @@ public static Set<String> read() throws FileNotFoundException
 		temp.add(word);
 	}
 	return temp;
-}}
+}
+}
