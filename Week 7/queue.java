@@ -16,4 +16,3 @@ public class queue {
 	System.out.println("peek = "+q.peek());	
 	}		
 	}
-
