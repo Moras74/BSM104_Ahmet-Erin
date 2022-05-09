@@ -1,26 +1,26 @@
 import java.util.ArrayList;
-public class Fibonacci_ArrayList{
+import java.util.List;
+import java.util.Scanner;
+public class Fibonacci_ArrayList {
+	
+	   public static void main(String[] args) {
 
+		      Scanner scan = new Scanner(System.in);
+		      System.out.print("Enter a number :");
+		      
+		      int n = scan.nextInt();
 
-  public ArrayList<Integer> fib(int x){
-    ArrayList<Integer> fibonacci = new ArrayList<Integer>();
-    fibonacci.add(0);
-    fibonacci.add(0);
-    if(x < 2) return fibonacci;
-    for(int i = 2;i<=x;i++){
-      int sum = (i - 1) + (i - 2);
-      fibonacci.add(sum);
-    }
-      
-      return fibonacci;
-  }
-
-  public static void main(String[] args){
-	  Fibonacci_ArrayList pd = new Fibonacci_ArrayList();
-
-
-    System.out.println(pd.fib(6));
-
-
-  }
-}
+		      List<Integer> numbersList = new ArrayList<>();
+		      int first = 0, second = 1, fib;
+		      numbersList.add(first);
+		      numbersList.add(second);
+		      
+		      for(int i = 2; i < n; i++) {
+		          fib = second + first;
+		          first = second;
+		          second = fib;
+		          numbersList.add(fib);
+		      }
+		      System.out.println(numbersList);
+		  }
+		}
