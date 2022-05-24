@@ -5,9 +5,9 @@ public static void main(String[] args) {
 	int [] numbers2= {11,18,29,37,42,49,51,36};
 int index = binarySearchR(numbers2,42,0,numbers2.length-1);
 	if(index !=-1)
-		System.out.println("Elmanin indeksi : "+index);
+		System.out.println("Elemanin indeksi : "+index);
 	else
-		System.out.println("Elmanin bulunmadi");
+		System.out.println("Eelmanin bulunmadi");
 }
 public static int binarySearchR(int []numbers,int target,int min,int max) {
 	if(min>max)
