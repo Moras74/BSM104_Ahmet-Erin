@@ -7,7 +7,7 @@ int index = binarySearchR(numbers2,42,0,numbers2.length-1);
 	if(index !=-1)
 		System.out.println("Elemanin indeksi : "+index);
 	else
-		System.out.println("Eelmanin bulunmadi");
+		System.out.println("Elemanin bulunmadi");
 }
 public static int binarySearchR(int []numbers,int target,int min,int max) {
 	if(min>max)
