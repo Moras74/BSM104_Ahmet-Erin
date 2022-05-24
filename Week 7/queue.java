@@ -12,7 +12,7 @@ public class queue {
 		q.add(word);
 	}
 	System.out.println("queue = "+q);
-	System.out.println(q.size());
+	System.out.println("Queue Size = "+q.size());
 	System.out.println("peek = "+q.peek());	
 	}		
 	}
