@@ -7,17 +7,17 @@ public static void main(String[] args) {
 	int index = indexOf2(numbers2,37);
 	int index2 = indexOf2(numbers2,33);
 	if(index !=-1)
-		System.out.println("Elmanin indeksi : "+index);
+		System.out.println("Elemanin indeksi : "+index);
 	else
-		System.out.println("Elmanin bulunmadi");
+		System.out.println("Elemanin bulunmadi");
 	if(index1 !=-1)
-		System.out.println("Elmanin indeksi : "+index1);
+		System.out.println("Elemanin indeksi : "+index1);
 	else
-		System.out.println("Elmanin bulunmadi ");
+		System.out.println("Elemanin bulunmadi ");
 	if(index2 !=-1)
-		System.out.println("Elmanin indeksi : "+index2);
+		System.out.println("Elemanin indeksi : "+index2);
 	else
-		System.out.println("Elmanin bulunmadi");
+		System.out.println("Elemanin bulunmadi");
 
 }
 public static int indexOf(int []numbers , int target) {
