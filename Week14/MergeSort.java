@@ -2,12 +2,13 @@ public class MergeSort {
 void sort(int[] array,int left,int right) {
 	if(left<right) {
 		int middle = left + (right - left) / 2;
+		
 		sort(array,left,middle);
 		sort(array , middle + 1 , right);
 		merge(array , left , middle , right);
-	}
-}
+	}}
 void merge(int[] array , int left , int middle , int right) {
+	
 	int number1 = middle - left + 1;
 	int number2 = right - middle;
 	
@@ -17,7 +18,7 @@ void merge(int[] array , int left , int middle , int right) {
 	for (int i = 0; i < number1; i++) {
 		L[i] = array[left + i];
 	}
-	for (int i = 0; i<number2; i++) {
+	for (int i = 0; i < number2; i++) {
 		R[i] = array[middle + 1 + i];
 	}
 	int i = 0, j = 0;
@@ -30,6 +31,29 @@ void merge(int[] array , int left , int middle , int right) {
 			array[k] = R[j];
 			j++;
 		}
+		k++;
+		}
+       //kalan elemanlari kopyalamak icin
+	while(i < number1) {
+		array[k] = L[i];
+		i++;
+		k++;
+	}
+	while(j < number2) {
+		array[k] = R[j];
+		j++;
+		k++;
 	}
 }
+void printArray (int[] array) {
+	for(int i = 0; i < array.length;i++) {
+		System.out.println(array[i] + "");
+	}
+System.out.println();
 }
+public static void main(String[] args) {
+	MergeSort ob = new MergeSort();
+	int[] array = {5,8,58,11,25};
+	ob.sort(array, 0 , array.length-1);
+	ob.printArray(array);
+}}
